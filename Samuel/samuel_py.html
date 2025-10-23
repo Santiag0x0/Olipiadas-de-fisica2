@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Olimpiadas de Física - I.E. Bicentenario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e6f2ff, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #0066cc);
+      color: white;
+      padding: 40px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    header img {
+      width: 80px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    /* 🔹 Barra de navegación fija */
+    nav {
+      background: #004d99;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* 🔹 Secciones con espacio superior para que no se oculten bajo la barra */
+    section {
+      padding: 30px;
+      max-width: 950px;
+      margin: 80px auto 0 auto; /* deja espacio por la barra fija */
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 25px 0;
+      border-left: 8px solid #004d99;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h2 {
+      color: #004d99;
+      margin-top: 0;
+    }
+
+    /* 🔹 Ajuste de imágenes */
+    .card img {
+      display: block;
+      max-width: 280px;
+      width: 90%;
+      margin: 15px auto;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    ul, ol {
+      padding-left: 25px;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 5px solid #ffcc00;
+    }
+    footer b {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/2943/2943201.png" alt="Logo Física">
+    <h1>Olimpiadas de Física</h1>
+    <h2>I.E. Bicentenario</h2>
+    <p><i>“La ciencia como camino hacia el conocimiento y la innovación”</i></p>
+  </header>
+
+  <nav>
+    <a href="#objetivo">Objetivo</a>
+    <a href="#participacion">Participación</a>
+    <a href="#premios">Premios</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#historia">Historia</a>
+    <a href="#impacto">Impacto</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="objetivo">
+    <div class="card">
+      <h2>🎯 Objetivo</h2>
+      <img src="fisica.jpg" alt="Objetivo Física">
+      <p>Las Olimpiadas de Física en la <b>I.E. Bicentenario</b> buscan desarrollar competencias científicas, 
+      despertar el interés por la investigación y fortalecer las habilidades en resolución de problemas aplicados a la vida real.</p>
+    </div>
+  </section>
+
+  <section id="participacion">
+    <div class="card">
+      <h2>👥 Participación</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Participación">
+      <p>Pueden participar estudiantes de los grados 9°, 10° y 11°. La competencia se desarrolla en tres fases:</p>
+      <ol>
+        <li><b>Clasificación:</b> Prueba escrita de opción múltiple sobre temas de mecánica, electricidad y ondas.</li>
+        <li><b>Semifinal:</b> Problemas de razonamiento avanzado y análisis experimental.</li>
+        <li><b>Final:</b> Presentación de proyectos de física aplicados a la comunidad educativa.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="premios">
+    <div class="card">
+      <h2>🏆 Premios</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/2583/2583344.png" alt="Premios">
+      <ul>
+        <li>🥇 Medalla de oro, 🥈 plata y 🥉 bronce para los mejores puntajes.</li>
+        <li>🎓 Reconocimiento en ceremonia oficial y boletín institucional.</li>
+        <li>🌎 Oportunidad de representar al colegio en competencias municipales y departamentales.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="actividades">
+    <div class="card">
+      <h2>⚡ Actividades</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Actividades de Física">
+      <ul>
+        <li>📢 Charlas y divulgación científica mediante carteleras y exposiciones.</li>
+        <li>🔬 Demostraciones de experimentos con materiales caseros.</li>
+        <li>🎨 Concurso de carteleras y posters científicos.</li>  
+      </ul>
+    </div>
+  </section>
+
+  <section id="historia">
+    <div class="card">
+      <h2>📖 Historia</h2>
+      <img src="Olimpiadas.jpg" alt="Historia">
+      <p>Las Olimpiadas de Física de la <b>I.E. Bicentenario</b> comenzaron en el año 2018 como una propuesta de los docentes de Ciencias Naturales. 
+      Desde entonces, el evento ha crecido y se ha convertido en un referente institucional.</p>
+      <p>En 2023, el colegio obtuvo reconocimiento municipal por la calidad académica de sus participantes en el área de Física.</p>
+    </div>
+  </section>
+
+  <section id="impacto">
+    <div class="card">
+      <h2>🌟 Impacto en la comunidad</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/3589/3589053.png" alt="Impacto">
+      <p>Las Olimpiadas no solo premian el conocimiento, sino que también generan un ambiente de colaboración, disciplina y superación personal. 
+      Varios exalumnos que participaron hoy estudian <b>ingeniería, educación y ciencias puras</b>, contribuyendo al desarrollo de la región.</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="card">
+      <h2>📩 Contacto</h2>
+      <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Contacto">
+      <p>¿Tienes dudas? Comunícate con el área de Ciencias Naturales:</p>
+      <p>Email: <a href="mailto:Samuelvelasco@gmail.com">Samuelvelasco@gmail.com</a></p>
+      <p>Teléfono: (57) 31829319012 </p>
+      <p>Dirección: Calle 10 #25-30, Bucaramanga, Santander</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Olimpiadas de Física | I.E. Bicentenario</p>
+    <p>Página elaborada por <b>Samuel Velasco - Grado 11.1</b></p>
+  </footer>
+
+</body>
+</html>
